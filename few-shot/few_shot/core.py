@@ -75,9 +75,18 @@ class NShotTaskSampler(Sampler):
                     #support_k[k] = support
                     #################
                     ## pick sequential 4 faces from same emotion folder
-                    ramdom_folder = df[df['class_id'] == k].sample(1)
-                    samefolder = os.path.split(ramdom_folder.iloc[0]['filepath'])[0]
+
+                    random_folder = df[df['class_id'] == k].sample(1)
+                    samefolder = os.path.split(random_folder.iloc[0]['filepath'])[0]
                     files = os.listdir(samefolder)
+
+                    if len(files) < self.n:
+                        while(len(files) < self.n):
+                            random_folder = df[df['class_id'] == k].sample(1)
+                            samefolder = os.path.split(random_folder.iloc[0]['filepath'])[0]
+                            files = os.listdir(samefolder)
+
+
                     #support = df[df['filepath'] == samefolder].sample(self.n-1)
                     #support =df[df['filepath']==samefolder].sample(self.n)
 
@@ -88,6 +97,7 @@ class NShotTaskSampler(Sampler):
                     for i in range(self.n - 1):
                         filepath = os.path.join(samefolder, support_filename[i+1])
                         support = support.append(df[df['filepath'] == filepath])
+
 
                     support_k[k] = support
 

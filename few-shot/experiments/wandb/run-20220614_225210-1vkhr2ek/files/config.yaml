@@ -1,0 +1,50 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.17
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.0
+    start_time: 1655214730
+    t:
+      1:
+      - 1
+      - 41
+      - 54
+      - 55
+      2:
+      - 1
+      - 41
+      - 54
+      - 55
+      4: 3.7.0
+      5: 0.12.17
+      8:
+      - 5
+dataset:
+  desc: null
+  value: AFEW
+distance:
+  desc: null
+  value: l2
+k_test:
+  desc: null
+  value: 3
+k_train:
+  desc: null
+  value: 3
+n_test:
+  desc: null
+  value: 1
+n_train:
+  desc: null
+  value: 4
+q_test:
+  desc: null
+  value: 1
+q_train:
+  desc: null
+  value: 5
