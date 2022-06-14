@@ -56,7 +56,7 @@ elif args.dataset == 'miniImageNet':
 elif args.dataset == 'AFEW':
     n_epochs = 1000
     dataset_class = AFEW
-    num_input_channels = 1
+    num_input_channels = 3
     drop_lr_every = 40
 else:
     raise(ValueError, 'Unsupported dataset')

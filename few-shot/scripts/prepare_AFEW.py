@@ -20,23 +20,25 @@ from few_shot.utils import mkdir, rmdir
 
 
 # Clean up folders
-rmdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_background')
-rmdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_evaluation')
-mkdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_background')
-mkdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_evaluation')
-
+rmdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_background')
+rmdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_evaluation')
+mkdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_background')
+mkdir('/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_evaluation')
 
 
 EMOTIONS = {0:'Angry', 1:'Disgust', 2:'Fear', 3:'Happy',4:'Neutral', 5:'Sad', 6:'Surprise'}
-emotions_background = ['Angry', 'Disgust', 'Fear', 'Happy']
-emotions_evaluation = ['Neutral', 'Sad', 'Surprise']
+emotions_background = ['Angry', 'Disgust', 'Fear', 'Happy','Neutral', 'Sad', 'Surprise']
+emotions_evaluation = ['Angry', 'Disgust', 'Fear', 'Happy','Neutral', 'Sad', 'Surprise']
 
 
 for i in range(4):
-    mkdir(f'/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_background/{emotions_background[i]}')
+    mkdir(f'/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_background/{emotions_background[i]}')
 for i in range(3):
-    mkdir(f'/home/ivpl-d28/Pycharmprojects/FER/AFEW/images_evaluation/{emotions_evaluation[i]}')
+    mkdir(f'/home/ivpl-d28/Pycharmprojects/FER/AFEW/trial4_0614_DATA/images_evaluation/{emotions_evaluation[i]}')
 
+
+
+# WHEN THE FOLDERS ARE MIXED WITH NUMBERS, NOT KNWOING EMOTION FOLDER
 
 RAW_DATA_PATH = '/home/ivpl-d28/Pycharmprojects/FER/AFEW/Train_AFEW/'
 DATA_PATH = '/home/ivpl-d28/Pycharmprojects/FER/AFEW/Train_AFEW/AlignedFaces_LBPTOP_Points/AlignedFaces_LBPTOP_Points/Faces'
@@ -56,3 +58,5 @@ for emotion in EMOTIONS:
             dst = f'/home/ivpl-d28/Pycharmprojects/FER/AFEW/{category}/{EMOTIONS[emotion]}/{folder.split(".")[0]}'
             shutil.copytree(src, dst)
             # shutil.copytree("./test1", "./test2")
+            
+

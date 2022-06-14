@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-91-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2022-06-14T14:14:45.804829",
+    "startedAt": "2022-06-14T14:14:44.153567",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "10.0.130",
+    "args": [],
+    "state": "running",
+    "program": "/home/ivpl-d28/Pycharmprojects/FER/few-shot/few-shot/experiments/proto_nets.py",
+    "codePath": "few-shot/experiments/proto_nets.py",
+    "git": {
+        "remote": "https://github.com/chaelin0722/Few-shot-FER.git",
+        "commit": "9bba847f79b1dc919a20ef25556804787d41b654"
+    },
+    "email": "ccaa9697@gmail.com",
+    "root": "/home/ivpl-d28/Pycharmprojects/FER/few-shot",
+    "host": "ivpl-d28",
+    "username": "ivpl-d28",
+    "executable": "/home/ivpl-d28/anaconda3/envs/fsl/bin/python"
+}
