@@ -1,6 +1,5 @@
 # Few-shot-FER
 
-# Few-shot-FER
 
 ## TERM PROJECT for  [Advanced probability theory-based information processing]
 
@@ -19,20 +18,6 @@ a Python intallation version = 2.7
 the SciPy and scikit-learn packages
 a PyTorch install (pytorch.org)
 a Faiss install (Faiss)
-
-## Pre-trained models
-pre-trained models with AlexNet and VGG-16 architectures, available for download.
-
-AlexNet-PyTorch
-AlexNet-prototxt + AlexNet-caffemodel
-VGG16-PyTorch
-VGG16-prototxt + VGG16-caffemodel
-
-## Running the unsupervised training
-
-
-<br>
-<br>
 
 
 #### references
