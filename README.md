@@ -32,3 +32,5 @@ a Faiss install (Faiss)
 meta learning 기법을 변형하던지, 새로운 것을 추가하는 방향인 경우
 
 [1] [https://arxiv.org/pdf/2112.09791.pdf](https://arxiv.org/pdf/2112.09791.pdf)
+
+[2] [https://openaccess.thecvf.com/content/ICCV2021/papers/Ma_Partner-Assisted_Learning_for_Few-Shot_Image_Classification_ICCV_2021_paper.pdf](https://openaccess.thecvf.com/content/ICCV2021/papers/Ma_Partner-Assisted_Learning_for_Few-Shot_Image_Classification_ICCV_2021_paper.pdf)
